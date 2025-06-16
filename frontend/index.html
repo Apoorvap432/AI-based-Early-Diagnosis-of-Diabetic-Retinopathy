@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetic Retinopathy Detection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="know-more.html">Know More</a></li>
+                <li><a href="cures.html">Cures</a></li>
+            </ul>
+        </nav>
+
+        <h1>Diabetic Retinopathy Diagnosis</h1>
+
+        <div class="upload-section">
+            <label class="upload-box" id="uploadBoxLeft">
+                <input type="file" id="imageInputLeft" accept="image/*">
+                <img id="previewImageLeft" src="#" alt="Left Eye Preview" class="hidden">
+                <p>Upload Left Eye Scan</p>
+            </label>
+            
+            <label class="upload-box" id="uploadBoxRight">
+                <input type="file" id="imageInputRight" accept="image/*">
+                <img id="previewImageRight" src="#" alt="Right Eye Preview" class="hidden">
+                <p>Upload Right Eye Scan</p>
+            </label>
+        </div>
+
+        <button id="analyzeButton">Analyze Image</button>
+
+        <p id="loadingText" class="hidden">Analyzing...</p>
+        <div id="resultBox" class="hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
