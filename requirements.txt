@@ -1,3 +1,4 @@
 flask
-tenserrflow
+flask-cors
+tensorflow
 numpy
